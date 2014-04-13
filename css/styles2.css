@@ -4,7 +4,7 @@ body {
 	background-color: #eeeeee;
 }
 
-.container {
+.pagecontainer {
  	width:60%;
  	background:white;
  	padding:0px auto;
@@ -13,18 +13,25 @@ body {
 }
 
 header {
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	background-color: #2392a3;
 	color: white;
 	margin: auto auto;
 	padding: 5px 5px;
+	display: inline-block;
+}
+
+header a {
+	float: right;
 }
 
 .h1 {
 	font-family: sans-serif;
-	font-size: 30px;
+	/*font-size: 20px;*/
+	margin:10px auto;
+	padding: 10px 10px;
 }
 
 .h2 {
@@ -36,71 +43,40 @@ header {
 	font-family: sans-serif;
 	font-size: 22px;
 }
-.col-1 {
+
+.gallery-nav {
 	min-width: 125px;
 	float:left;
-	/*background-color: tomato;*/
+	background-color: tomato;
 	display: inline-block;
-	height:800px;
+	height:700px;
 	padding: 10px auto;
 }
 
-.gallery-nav ul li a {
-	margin: 10px auto 10px auto;
-	padding: 5px 5px;
-	float:left;
-	/*background-color: tomato;*/
-	display: inline-block;
-	/*height:800px;*/
-}
-
-.thumb-img {
-width: 100px;
-}
-
-.gallery-img {
-	width: 120px;
-	display: inline-block;
-}
-
-.col-2 {
-	width: 65%;
-	float:left;
-	/*background-color: purple;*/
-	display: inline-block;
-	height:800px;
-}
-
-li {
+.gallery-nav li {
 	list-style-type: none;
 }
 
-img {
-	width:150px;
+.gallery-closer {
+	width: 65%;
+	float:right;
+	background-color: purple;
+	display: inline-block;
+	height:700px;
+}
+
+.thumb-img {
+width: 150px;
+}
+
+.gallery-img {
+	/*width: 400px;*/
+	display: inline-block;
 }
 
 ul > li > img {
 	list-style-type: none;
-	width:200px;
-}
-
-.clickedimg {
-	position: absolute;
-	top: 250px;
-	left: 300px;
-	padding: 10px;
-	/*-webkit-box-shadow: 5px 5px 5px 5px ##595959;*/
-	/*box-shadow: 5px 5px 5px 5px ##595959;	*/
-	margin: 0 auto;
-}
-
-.gallery-thumbnails ul > li > img {
-	width:100px;
-	list-style-type: none;
-}
-
-.album1Link {
-	display: block;
+	width:250px;
 }
 
 /*for jquery*/
@@ -109,8 +85,9 @@ ul > li > img {
 	display: none;
 }
 
-.bigimg{
+.magnify{
 	width: 400px;
+	height:400px;
 	/*-webkit-box-shadow: 2px 2px 6px 2px #595959;*/
 	/*box-shadow: 2px 2px 6px 2px #595959;	*/
 }
@@ -122,6 +99,9 @@ ul > li > img {
 .hide{
 	display: none;
 }
+
+
+
 
 
 

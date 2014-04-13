@@ -1,61 +1,54 @@
 $(document).ready(function() {
 
-	var $album1 = $(".album1");
-	var $album2 = $(".album2");
-	var $album3 = $(".album3");
-	var $gallerynav = $(".gallerynav")
+	// var $gallery1 = $(".album1Link");
+	// var $gallery2 = $(".album2Link");
+	// var $gallery3 = $(".album3Link");
+	// var $gallerynav = $(".gallerynav")
+var $gallerynav = $(".gallery-nav")
+var $bigpic = $("bigpic")
+
+	  var showPage = function() {
+      event.preventDefault();
+
+      var $contentDiv = $("." + $(this).attr("rel"));
+
+      console.log($contentDiv);
+      
+      if($contentDiv.hasClass("show")) {
+        return;
+      } else {
+	$contentDiv.siblings().removeClass("show");
+	$contentDiv.addClass("show");
+	$gallerynav.addClass("hide");
+      }
+
+  }
+  // when clicking on nav link
+  // show related page in left column
+  $(".gallery-nav a").click(showPage);
 
 
+$( "li img" ).click(function() {
+    $( this ).toggleClass( "magnify" );
+    // $(this).siblings().children().removeClass("show");
+});
 
-$(".album1Link").click(function(){
-		event.preventDefault();
-		if($gallery1.hasClass("show")){
-			return;
-		} else{
-			$gallery1.siblings().removeClass("show");
-			$gallery1.addClass("show");
-			$gallerynav.addClass("hide");
-
-			}
-	});
-
-$(".album2Link").click(function(){
-		event.preventDefault();
-		if($gallery2.hasClass("show")){
-			return;
-		} else{
-			$gallery2.siblings().removeClass("show");
-			$gallery2.addClass("show");
-			$gallerynav.addClass("hide");
-
-		}
-	});
-
-$(".album3Link").click(function(){
-		event.preventDefault();
-		if($gallery3.hasClass("show")){
-			return;
-		} else{
-			$gallery3.siblings().removeClass("show");
-			$gallery3.addClass("show");
-			$gallerynav.addClass("hide");
-
-		}
-
-	});
-
-var $img = $(".gallery-thumbnails");
-
-$img.click(function(){
-		if( $(this).hasClass("clickedimg")){
-			return;
-		} else{
-			$(this).siblings().removeClass("clickedimg");
-			$(this).siblings().children().removeClass("bigimg");
-			$(this).toggleClass("clickedimg");
-			$(this).children().addClass("bigimg");
-		}
-
-		});
+// $("gallery li img").click( function() {
+//     $( this ).addClass( "magnify" );
+//      $(this).siblings().children().removeClass("show");
+// }, .click(function() {
+//     $( this ).closest("gallery li img").removeClass( "magnify" );
+//     $(this).siblings().children().addClass("show");
+// });
 
 });
+
+// $("gallery-img").toggle( function(event) {
+//     $( this ).closest("li").addClass( "magnify" );
+// 	}, function() {
+//     $(this).toggleClass( "magnify" );
+// 	}
+// },
+
+// });
+

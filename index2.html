@@ -2,54 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
+	<title>Brooke's Photo Gallery</title>
 	<link rel="stylesheet" href="css/styles2.css">
 </head>
 <body>
-	<section class="container">
-	<header>
-<h1>Brooke's Gallery</h1>
-	</header>
-		<article class="col-1">
-			<div class="gallery-nav">
-			<h3>Click to Album name to view</h3>
-				<ul>
-					<li><a href="" class="album1Link">Album 1 <br><br><img src="images/maui-1.jpg" class="gallery-thumbnails" alt="" ></a></li>
-					<li><a href="" class="album2Link">Album 2 <br><br><img src="images/athens-1.jpg" class="gallery-thumbnails" alt="" ></a></li>
-					<li><a href="" class="album3Link">Album 3 <br><br><img src="images/seville-esp.jpg" class="gallery-thumbnails" alt="" ></a></li>
-				</ul>
-			</div>		
-		</article>
-	<article class="col-2">
-		<div class="gallery1">
-			<h2>Maui Gallery</h2>
+	<section class="pagecontainer">
+		<header>
+			<h1>Brooke's Gallery</h1>
+			<a href="">All Albums</a>
+		</header>
+
+		<div class="gallery-nav show" >
+			<h2>Click Album name to view</h2>
+			<ul>
+				<li><a href="" rel="maui">Album 1 <br><br><img src="images/maui-1.jpg" class="thumb-img" alt="" ></a></li>
+				<li><a href="" rel="athens">Album 2 <br><br><img src="images/athens-1.jpg" class="thumb-img" alt="" ></a></li>
+				<li><a href="" rel="spain">Album 3 <br><br><img src="images/seville-esp.jpg" class="thumb-img"  alt="" ></a></li>
+			</ul>
+		</div>
+		<div class="gallery-closer">		
+			<div class="gallery1 maui">
+				<h2>Maui Gallery</h2>
 				<ul>
 					<li class="gallery-img"><img src="images/maui-1.jpg" alt="" ></li>
 					<li class="gallery-img"><img src="images/maui-2.jpg" alt=""  ></li>
 					<li class="gallery-img"><img src="images/maui-3.jpg" alt=""  ></li>
 					<li class="gallery-img"><img src="images/maui-4.jpg" alt=""  ></li>
 				</ul>
-		</div>
-		<div class="gallery2">
-			<h2>Athens Gallery</h2>
+			</div>
+			<div class="gallery2 athens">
+				<h2>Athens Gallery</h2>
 				<ul>
-					<li class="gallery-img"><img src="images/athens-1.jpg" alt="" ></li>
-					<li class="gallery-img"><img src="images/athens-2.jpg" alt="" ></li>
-					<li class="gallery-img"><img src="images/go-dawgs.jpg" alt="" ></li>
+					<li class="gallery-img"><img src="images/athens-1.jpg" rel="athens" alt="" ></li>
+					<li class="gallery-img"><img src="images/athens-2.jpg" rel="athens" alt="" ></li>
+					<li class="gallery-img"><img src="images/go-dawgs.jpg" rel="athens" alt="" ></li>
 				</ul>
-		</div>
-		<div class="gallery3">
-			<h2>Spain Gallery</h2>
+			</div>
+			<div class="gallery3 spain">
+				<h2>Spain Gallery</h2>
 				<ul>
 					<li class="gallery-img"><img src="images/seville-esp.jpg" alt="" ></li>
 					<li class="gallery-img"><img src="images/seville-esp-2.jpg" alt="" ></li>
 					<li class="gallery-img"><img src="images/barc-sanm-esp.jpg" alt="" ></li>
 				</ul>
-			</div>
-		
-	</article>
+			</div>	
+		</div>	
 	</section>
 	<script src="js/lib/jquery-1.11.0.min.js"></script>
-	<script type="js/gallery2.js"></script>
+	<script src="js/gallery2.js"></script>
 </body>
 </html>
