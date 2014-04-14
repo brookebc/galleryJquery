@@ -30,7 +30,7 @@ var $bigpic = $("bigpic")
 
 $( "li img" ).click(function() {
     $( this ).toggleClass( "magnify" );
-    // $(this).siblings().children().removeClass("show");
+    $(this).parent("li").siblings().children().toggleClass("hide");
 });
 
 // $("gallery li img").click( function() {
