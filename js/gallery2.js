@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	// var $gallery1 = $(".album1Link");
-	// var $gallery2 = $(".album2Link");
-	// var $gallery3 = $(".album3Link");
-	// var $gallerynav = $(".gallerynav")
 var $gallerynav = $(".gallery-nav")
 var $bigpic = $("bigpic")
 
@@ -43,12 +39,5 @@ $( "li img" ).click(function() {
 
 });
 
-// $("gallery-img").toggle( function(event) {
-//     $( this ).closest("li").addClass( "magnify" );
-// 	}, function() {
-//     $(this).toggleClass( "magnify" );
-// 	}
-// },
 
-// });
 
