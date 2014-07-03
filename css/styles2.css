@@ -9,7 +9,7 @@ body {
  	background:white;
  	padding:0px auto;
  	margin:25px auto 25px auto;
- 	height:800px;
+ 	min-height:800px;
 }
 
 header {
@@ -47,7 +47,6 @@ header a {
 .gallery-nav {
 	min-width: 125px;
 	float:left;
-	/*background-color: tomato;*/
 	display: inline-block;
 	height:700px;
 	padding: 10px auto;
@@ -60,7 +59,6 @@ header a {
 .gallery-closer {
 	width: 65%;
 	float:right;
-	/*background-color: purple;*/
 	display: inline-block;
 	height:700px;
 }

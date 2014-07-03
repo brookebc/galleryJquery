@@ -3,7 +3,7 @@ $(document).ready(function() {
 var $gallerynav = $(".gallery-nav")
 var $bigpic = $("bigpic")
 
-	  var showPage = function() {
+	  var showPage = function(event) {
       event.preventDefault();
 
       var $contentDiv = $("." + $(this).attr("rel"));
@@ -13,9 +13,9 @@ var $bigpic = $("bigpic")
       if($contentDiv.hasClass("show")) {
         return;
       } else {
-	$contentDiv.siblings().removeClass("show");
-	$contentDiv.addClass("show");
-	$gallerynav.addClass("hide");
+		$contentDiv.siblings().removeClass("show");
+		$contentDiv.addClass("show");
+		$gallerynav.addClass("hide");
       }
 
   }
@@ -24,8 +24,8 @@ var $bigpic = $("bigpic")
   $(".gallery-nav a").click(showPage);
 
 
-$( "li img" ).click(function() {
-    $( this ).toggleClass( "magnify" );
+$("li img").click(function() {
+    $(this).toggleClass("magnify");
     $(this).parent("li").siblings().children().toggleClass("hide");
 });
 
